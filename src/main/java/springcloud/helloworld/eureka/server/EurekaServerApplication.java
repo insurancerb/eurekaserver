@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 @SpringBootApplication
 @EnableEurekaServer
 public class EurekaServerApplication {
-    private Logger logger = LoggerFactory.getLogger(EurekaServerApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(EurekaServerApplication.class);
     public static void main(String[] args) {
         SpringApplication.run(EurekaServerApplication.class,args);
         logger.info("eurekaServer starting");
